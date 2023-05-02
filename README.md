@@ -1,4 +1,4 @@
-# Asean Youth Forum (AYO) Front End
+# Asean Youth Forum (AYO) Back End
 
 Dibuat dengan :
 
@@ -57,7 +57,7 @@ Dibuat dengan :
 
 4. Lanjutkan Pekerjaan dengan Semestinya
 
-5. Tapi jika ketika melakukan step kedua terjadi error conflitc atau karena kesalahan kamu, maka ikuti langkah yang bawah
+5. Tapi jika ketika melakukan step kedua terjadi error conflict atau karena kesalahan kamu, maka ikuti langkah yang bawah
 
 ## Conflict Resolve Guide V2
 
@@ -106,6 +106,6 @@ Visual Studio Code
 
 ## Demo App
 
-- [Production Build](https://ayo-fe-38.netlify.app/)
+- [Production Build](https://ayo-be-20.netlify.app/)
 
-- [Development Build](https://ayo-fe-38.vercel.app/)
+- [Development Build](https://development-ayo-be-20.vercel.app/)
