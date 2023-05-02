@@ -92,7 +92,7 @@ Visual Studio Code
 
 - Clone Project ini ( Direkomendasikan menggunakan SSH )
 
-  > `git clone git@github.com:midnightanggel/ayo-fe-38.git`
+  > `git clone git@github.com:midnightanggel/ayo-be-20.git`
 
 - Pindah ke branch development
 
