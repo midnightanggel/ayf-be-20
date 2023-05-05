@@ -1,77 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <!-- Favicons -->
-  <link href="assets/Pic/Logo.png" rel="icon">
-  <link href="assets/Pic/Logo.png" rel="apple-touch-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AYO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <section
+      class="flex h-screen bg-gray-200 justify-start items-center shadow-lg transition-all ease-in-out w-full bg-yellow-100"
+    >
+      <section
+        class="flex lg:w-1/2 w-full h-full justify-center bg-white h-auto md:p-8 flex-col gap-y-6"
+      >
+        <section class="flex flex-col md:gap-y-8 md:px-18 px-6 w-full">
+          <section
+            class="flex justify-start items-start gap-y-2 flex-col md:mx-12 mx-02"
+          >
+            <section class="flex gap-2 py-8">
+              <img width="70" src="assets/Pic/Logo.png" alt="" />
+              <h1 class="py-2 text-xl font-bold self-center">
+                Asean Youth Forum
+              </h1>
+            </section>
+            <h1 class="text-gray-800 font-bold md:text-3xl text-2xl">
+              Welcome Back
+            </h1>
 
-    <title>AYO - Login</title>
-</head>
-<body>
+            <span class="md:text-md text-sm text-left font-medium text-gray-500"
+              >Please log in with your account</span
+            >
+          </section>
+          <form class="md:mx-12 mx-0">
+            <section
+              class="flex flex-col h-full items-center justify-center w-full gap-y-6"
+            >
+              <section class="flex flex-col gap-y-6 w-full items-center">
+                <section class="flex flex-col w-full gap-y-6">
+                  <section class="flex flex-col gap-y-3">
+                    <label for="email" class="text-gray-500 text-sm"
+                      >Email <span class="text-red-700 font-bold">*</span>
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      class="px-3 py-3 bg-gray-100 border shadow-md border-blue-200 placeholder-slate-500 focus:outline-none focus:ring-yellow-200 w-auto rounded-md sm:text-sm focus:ring-1"
+                      placeholder="youremail@gmail.com"
+                    />
+                  </section>
+                  <section class="flex flex-col gap-y-3">
+                    <label for="password" class="text-gray-500 text-sm"
+                      >Password
+                      <span class="text-red-700 font-bold">*</span>
+                    </label>
+                    <input
+                      type="password"
+                      id="password"
+                      class="px-3 py-3 bg-gray-100 border shadow-md border-blue-200 placeholder-slate-500 focus:outline-none focus:ring-yellow-200 w-auto rounded-md sm:text-sm focus:ring-1"
+                      placeholder="Enter your password"
+                    />
+                  </section>
+                </section>
+              </section>
+              <span id="warning" class="text-red-500 font-medium hidden"
+                >Data cannot be empty
+              </span>
+              <button
+                type="submit"
+                class="w-full bg-blue-400 h-auto md:px-6 md:py-3 p-3 rounded-xl font-bold text-white shadow-lg hover:bg-blue-500 text-xs md:text-md"
+              >
+                Login
+              </button>
 
-    <!----------------------- Main Container -------------------------->
-
-     <div class="container d-flex justify-content-center align-items-center min-vh-100">
-
-    <!----------------------- Login Container -------------------------->
-
-       <div class="row border rounded-5 p-3 bg-white shadow box-area">
-
-    <!--------------------------- Left Box ----------------------------->
-
-       <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box" style="background: #103cbe;">
-           <div class="featured-image mb-3">
-            <img src="assets/Pic/1.jpg" class="img-fluid" style="width: 250px;">
-           </div>
-           <p class="text-white fs-2" style="font-family: 'Courier New', Courier, monospace; font-weight: 600;">Be Verified</p>
-           <small class="text-white text-wrap text-center" style="width: 17rem;font-family: 'Courier New', Courier, monospace;">Join experienced Designers on this platform.</small>
-       </div> 
-
-    <!-------------------- ------ Right Box ---------------------------->
-        
-       <div class="col-md-6 right-box">
-          <div class="row align-items-center">
-                <div class="header-text mb-4">
-                     <h2>Hello!</h2>
-                     <p>We are happy to have you join in here.</p>
-                </div>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control form-control-lg bg-light fs-6" placeholder="Email address">
-                </div>
-                <div class="input-group mb-1">
-                    <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Password">
-                </div>
-                <div class="input-group mb-5 d-flex justify-content-between">
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="formCheck">
-                        <label for="formCheck" class="form-check-label text-secondary"><small>Remember Me</small></label>
-                    </div>
-                    <div class="forgot">
-                        <small><a href="#">Forgot Password?</a></small>
-                    </div>
-                </div>
-                <div class="input-group mb-3">
-                    <button class="btn btn-lg btn-primary w-100 fs-6">Login</button>
-                </div>
-                <div class="input-group mb-3">
-                    <button class="btn btn-lg btn-light w-100 fs-6"><img src="assets/Pic/google.png" style="width:20px" class="me-2"><small>Sign In with Google</small></button>
-                </div>
-                <div class="row">
-                    <small>Don't have account? <a href="#">Sign Up</a></small>
-                </div>
-                <div class="row">
-                    <small>Back to Home? <a href="index.html">Click here</a></small>
-                </div>
-          </div>
-       </div> 
-
-      </div>
-    </div>
-
-</body>
+              <span class="text-gray-500 font-medium"
+                >Don't have an account yet ?
+                <span class="text-blue-400 cursor-pointer">Register</span>
+              </span>
+            </section>
+          </form>
+          <span class="text-gray-500 text-center font-medium"
+            >Back to
+            <a href="index.html">
+                <span class="text-blue-400 cursor-pointer">Home</span>
+            </a>
+          </span>
+        </section>
+      </section>
+      <section
+        class="lg:flex items-center hidden w-1/2 md:px-6 justify-center h-full" style="background-image: linear-gradient(160Deg,#00FFCA,#8a2be2, #00FFCA);"
+      >
+        <section class="w-full px-8">
+          <section class="flex flex-col w-full justify-center">
+            <h1 class="text-white font-bold text-5xl">
+              "Unlock Your Potential, Empower ASEAN"
+            </h1>
+            <p class="text-white py-2 text-2xl">BE-20</p>
+          </section>
+        </section>
+      </section>
+    </section>
+    <script src="modules/login.js" type="module"></script>
+  </body>
 </html>
