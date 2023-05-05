@@ -13,15 +13,15 @@ const handleLogin = async (e) => {
   e.preventDefault();
   if (validate()) {
     warning.classList.add("hidden");
-    try {
+    try {    
       const res = await fetch(
-        "https://6450c07fa32219691150eb05.mockapi.io/ayo-api/users?" +
+        "https://6453cc52e9ac46cedf301137.mockapi.io/users?" +
           new URLSearchParams({ email: email.value }),
         {
           method: "GET",
           headers: { "content-type": "application/json" },
         }
-      );
+      );console.log(res.json)
       const data = await res.json();
       if (data.length > 0) {
         warning.textContent = "Data cannot be empty";

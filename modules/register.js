@@ -1,4 +1,4 @@
-const fullName = document.getElementById("fullName");
+const fullName = document.getElementById("fullname");
 const age = document.getElementById("age");
 const country = document.getElementById("country");
 const email = document.getElementById("email");
@@ -24,11 +24,11 @@ const handleRegister = async (e) => {
   if (validate()) {
     document.getElementById("warning").classList.add("hidden");
     try {
-      await fetch("https://6450c07fa32219691150eb05.mockapi.io/ayo-api/users", {
+      await fetch("https://6453cc52e9ac46cedf301137.mockapi.io/users", {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify({
-          fullName: fullName.value,
+          fullname: fullName.value,
           age: age.value,
           country: country.value,
           email: email.value,
