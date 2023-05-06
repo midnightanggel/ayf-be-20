@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AYO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="assets/Pic/AYO logo.jfif" rel="icon">
+    <link href="assets/Pic/AYO logo.jfif" rel="apple-touch-icon">
+  </head>
+  <body>
+    <section
+      class="flex h-screen bg-gray-200 justify-start items-center shadow-lg transition-all ease-in-out w-full bg-yellow-100"
+    >
+      <section
+        class="flex lg:w-1/2 w-full h-full justify-center bg-white h-auto md:p-8 flex-col gap-y-6"
+      >
+        <section class="flex flex-col md:gap-y-8 md:px-18 px-6 w-full">
+          <section
+            class="flex justify-start items-start gap-y-2 flex-col md:mx-12 mx-02"
+          >
+            <section class="flex gap-2 py-8">
+              <img width="70" src="assets/Pic/Logo.png" alt="" />
+              <h1 class="py-2 text-xl font-bold self-center">
+                Asean Youth Forum
+              </h1>
+            </section>
+            <h1 class="text-gray-800 font-bold md:text-3xl text-2xl">
+              Welcome Back
+            </h1>
+
+            <span class="md:text-md text-sm text-left font-medium text-gray-500"
+              >Please log in with your account</span
+            >
+          </section>
+          <form class="md:mx-12 mx-0">
+            <section
+              class="flex flex-col h-full items-center justify-center w-full gap-y-6"
+            >
+              <section class="flex flex-col gap-y-6 w-full items-center">
+                <section class="flex flex-col w-full gap-y-6">
+                  <section class="flex flex-col gap-y-3">
+                    <label for="email" class="text-gray-500 text-sm"
+                      >Email <span class="text-red-700 font-bold">*</span>
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      class="px-3 py-3 bg-gray-100 border shadow-md border-blue-200 placeholder-slate-500 focus:outline-none focus:ring-yellow-200 w-auto rounded-md sm:text-sm focus:ring-1"
+                      placeholder="youremail@gmail.com"
+                    />
+                  </section>
+                  <section class="flex flex-col gap-y-3">
+                    <label for="password" class="text-gray-500 text-sm"
+                      >Password
+                      <span class="text-red-700 font-bold">*</span>
+                    </label>
+                    <input
+                      type="password"
+                      id="password"
+                      class="px-3 py-3 bg-gray-100 border shadow-md border-blue-200 placeholder-slate-500 focus:outline-none focus:ring-yellow-200 w-auto rounded-md sm:text-sm focus:ring-1"
+                      placeholder="Enter your password"
+                    />
+                  </section>
+                </section>
+              </section>
+              <span id="warning" class="text-red-500 font-medium hidden"
+                >Data cannot be empty
+              </span>
+              <button
+                type="submit"
+                class="w-full bg-blue-400 h-auto md:px-6 md:py-3 p-3 rounded-xl font-bold text-white shadow-lg hover:bg-blue-500 text-xs md:text-md"
+              >
+                Login
+              </button>
+
+              <span class="text-gray-500 font-medium"
+                >Don't have an account yet ?
+                <a href="register.html">
+                <span class="text-blue-400 cursor-pointer">Register</span>
+                </a>
+              </span>
+            </section>
+          </form>
+          <span class="text-gray-500 text-center font-medium"
+            >Back to
+            <a href="index.html">
+                <span class="text-blue-400 cursor-pointer">Home</span>
+            </a>
+          </span>
+        </section>
+      </section>
+      <section
+        class="lg:flex items-center hidden w-1/2 md:px-6 justify-center h-full" style="background-image: linear-gradient(160Deg,#00FFCA,#8a2be2, #00FFCA);"
+      >
+        <section class="w-full px-8">
+          <section class="flex flex-col w-full justify-center">
+            <h1 class="text-white font-bold text-5xl">
+              "Unlock Your Potential, Empower ASEAN"
+            </h1>
+            <p class="text-white py-2 text-2xl">BE-20</p>
+          </section>
+        </section>
+      </section>
+    </section>
+    <script src="modules/login.js" type="module"></script>
+  </body>
+</html>

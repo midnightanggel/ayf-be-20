@@ -8,13 +8,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
-    <script src="modules/home.js" type="module"></script>
     <title>AYO</title>
     <link href="assets/Pic/AYO logo.jfif" rel="icon">
     <link href="assets/Pic/AYO logo.jfif" rel="apple-touch-icon">
 </head>
 <body>
-    <!-- Start Navbar -->
     <nav class="navbar navbar-expand-lg" style="background-color: #0a4d68;">
         <div class="container">
             <a class="navbar-brand text-white" href="index.html">
@@ -27,7 +25,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active text-white" aria-current="page" href="#home">Home</a>
+                    <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="article.html">Article</a>
@@ -44,31 +42,57 @@
           </div>
         </div>
     </nav>
-    <!-- End Navbar -->
-
-    <!-- Start Content -->
-    <section class="p-5 text-center text-sm-start" id="home" style="background-image: linear-gradient(160Deg,#00FFCA,#8a2be2, #00FFCA);">
-        <div class="container py-5">
-            <div class="d-sm-flex align-items-center justify-content-between py-5">
-                <div>
-                    <h1 style="color: #ffffff;"> <strong>AYO (ASEAN YOUTH FORUM)</strong></h1>
-                    <p class="my-4" style="color: rgb(255, 255, 255);">
-                        Aplikasi ini merupakan wadah bagi para pemuda khususnya di ASEAN 
-                        untuk menerima, menyampaikan, serta mencari segala jenis informasi, gagasan, ataupun kritik 
-                        yang dapat memberikan rasa aman dan nyaman untuk para pemuda di ASEAN.
-                    </p>
-                    <button class="btn btn-primary btn-lg text-white">Let's Start</button>
-                </div>
-                <a href="#">
-                    <img src="assets/Pic/Logo.png" alt="Logo" class="img-fluid" width="1000">
-                </a>
+        <section class="p-5" id="aboutus">
+            <div class="container">
+                <h2 class="col-lg-12 col-md-12">Untung Rugi RI 'Cerai' dengan Dolar AS dan 'Kawin' dengan Yuan</h2>
+                <img alt="article" class="rounded mx-auto d-block" src="https://akcdn.detik.net.id/visual/2020/04/20/d01372c6-d7d0-4094-84ad-3e5c2235a101_169.jpeg?w=650&q=90">
+                <p style="color: rgb(99, 101, 102); text-align: right;">Update 11:18 05/05/2023</p>
+                <section class="mt-5" id="content" style="text-align: justify;"></section>
             </div>
-        </div>
-    </section>
-    <!-- End Content -->
+        </section class="p-5">
+            <div class="container">
+                <div class="like-dislike mt-5 mb-2" style="text-align: center;">
+                    <h5><Strong>Do you like this article?</Strong></h5>
+                    <i class="bi bi-hand-thumbs-up" style="font-size: 30px;"></i><i class="bi bi-hand-thumbs-down" style="font-size: 30px;"></i>
+                </div>
+                <div class="mb-3">
+                <h5><Strong>Commentar</Strong></h5>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="7" placeholder="Commentar under construction :("></textarea>
+                <button type="button" class="btn btn-primary mt-2">Comment</button>
+                </div>
+            </div>
 
-    <!-- Start Section Footer -->
-    <footer class="p-5 page-footer text-md-left" style="background-color: #0a4d68;">
+        <section class="mb-3 p-2">
+            <div class="container">
+                <div class="d-flex align-items-start">
+                    <img src="assets/Pic/Tim1.jpg" alt="account.jpg" class="rounded-circle" width="30px" height="30px">
+                    <h6 class="p-1"><strong>Raihan Maulana Ramadhan</strong></h6>
+                </div>
+                <div>
+                    <p class="ps-5 mt-1" id="comment">Kontennya sangat bagus sekali</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="d-flex align-items-start">
+                    <img src="assets/Pic/Tim1.jpg" alt="account.jpg" class="rounded-circle" width="30px" height="30px">
+                    <h6 class="p-1"><strong>Raihan Maulana Ramadhan</strong></h6>
+                </div>
+                <div>
+                    <p class="ps-5 mt-1" id="comment">Kontennya sangat bagus sekali</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="d-flex align-items-start">
+                    <img src="assets/Pic/Tim1.jpg" alt="account.jpg" class="rounded-circle" width="30px" height="30px">
+                    <h6 class="p-1"><strong>Raihan Maulana Ramadhan</strong></h6>
+                </div>
+                <div>
+                    <p class="ps-5 mt-1" id="comment">Kontennya sangat bagus sekali</p>
+                </div>
+            </div>
+        </section>
+     <!-- Start Section Footer -->
+     <footer class="p-5 page-footer text-md-left" style="background-color: #0a4d68;">
         <div class="container py-5">
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6">
@@ -95,7 +119,7 @@
                 <div class="col-lg-2 col-md-2 mx-auto">
                     <h5 class="text-uppercase font-weight-bold mb-4 text-white">Page Links</h5>
                     <ul class="list-styled">
-                        <li class="mb-1 text-white"><a class="text-white" href="#home">Home</a></li>
+                        <li class="mb-1 text-white"><a class="text-white" href="index.html">Home</a></li>
                         <li class="mb-1 text-white"><a class="text-white" href="AboutUs.html">About US</a></li>
                         <li class="mb-1 text-white"><a class="text-white" href="article.html">Article</a></li>
                     </ul>
@@ -121,5 +145,5 @@
     </footer>
     <!-- End Bottom Footer -->
 </body>
-<script src="modules/home.js" type="module"></script>
+<script type="module" src="modules/article_detail.js"></script>
 </html>
