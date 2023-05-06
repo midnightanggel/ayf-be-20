@@ -45,7 +45,7 @@
         <section class="p-5" id="aboutus">
             <div class="container">
                 <h2 class="col-lg-12 col-md-12">Untung Rugi RI 'Cerai' dengan Dolar AS dan 'Kawin' dengan Yuan</h2>
-                <img alt="article" class="rounded mx-auto d-block" src="https://akcdn.detik.net.id/visual/2020/04/20/d01372c6-d7d0-4094-84ad-3e5c2235a101_169.jpeg?w=650&q=90">
+                <img alt="article" class="img-fluid" src="https://akcdn.detik.net.id/visual/2020/04/20/d01372c6-d7d0-4094-84ad-3e5c2235a101_169.jpeg?w=650&q=90">
                 <p style="color: rgb(99, 101, 102); text-align: right;">Update 11:18 05/05/2023</p>
                 <section class="mt-5" id="content" style="text-align: justify;"></section>
             </div>
@@ -53,7 +53,8 @@
             <div class="container">
                 <div class="like-dislike mt-5 mb-2" style="text-align: center;">
                     <h5><Strong>Do you like this article?</Strong></h5>
-                    <i class="bi bi-hand-thumbs-up" style="font-size: 30px;"></i><i class="bi bi-hand-thumbs-down" style="font-size: 30px;"></i>
+                    <i class="bi bi-hand-thumbs-up" style="font-size: 30px;" id="color" onclick="colorGreen()"></i>
+                    <i class="bi bi-hand-thumbs-down" style="font-size: 30px;"></i>
                 </div>
                 <div class="mb-3">
                 <h5><Strong>Commentar</Strong></h5>
@@ -146,4 +147,9 @@
     <!-- End Bottom Footer -->
 </body>
 <script type="module" src="modules/article_detail.js"></script>
+<script>
+    function colorGreen() {
+      document.getElementById("color").style.color = "green";
+    }
+    </script>
 </html>
