@@ -106,6 +106,6 @@ Visual Studio Code
 
 ## Demo App
 
-- [Production Build](https://ayo-be-20.netlify.app/)
+- [Production Build](https://vercel.com/asean-youth-forum/ayo-be-20)
 
-- [Development Build](https://development-ayo-be-20.vercel.app/)
+- [Development Build](https://deployment-ayo-be-20.netlify.app/)
