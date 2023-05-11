@@ -36,7 +36,7 @@
                 </li>
                 <div id="btnlogin">
                     <a href="Login.html">
-                        <button class="btn btn-primary text-white" type="submit" >SignIn/SignUp</button>
+                        <button class="btn btn-primary text-white" type="submit" >Login</button>
                     </a>
                 </div>
             </ul>
@@ -45,15 +45,30 @@
     </nav>
     <!-- End Navbar -->
 
+
     <!-- Start Search Item -->
-    <form class=" container d-flex" role="search">
-        <input class="form-control me-2 my-3" type="search" placeholder="Cari artikel yang anda sukai" aria-label="Search">
-        <button class="btn btn-outline-primary my-3" type="submit">Search</button>
-    </form>
+    <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start" style="background-image: linear-gradient(160Deg,#00FFCA,#8a2be2, #00FFCA)">
+        <div class="container">
+          <div class="d-sm-flex align-items-center justify-content-between">
+            <div>
+              <h2>Welcome a <span class="text-warning"> AYO Web Article </span></h2>
+              <p class=" my-4">
+                We focus on teaching our students the fundamentals of the latest
+                and greatest technologies to prepare them for their first dev role
+              </p>
+                <form class=" container d-flex w-100 p-3" role="search">
+                    <input class="form-control me-1 my-3" type="search" placeholder="Cari artikel yang anda sukai" aria-label="Search">
+                    <button class="btn btn-outline-primary my-3" type="submit" style="background-color: #0a4d68">Search</button>
+                </form>
+            </div>
+            <img class="img-fluid w-50 d-none d-sm-block" src="assets/Pic/showcase.svg" alt="">
+          </div>
+        </div>
+      </section>
     <!-- End Search Item -->
 
     <!-- Start Section Carousell -->
-    <section class="container mb-4" id="article">
+    <section class="container p-5 mb-4" id="article">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
