@@ -36,7 +36,7 @@ const handleRegister = async (e) => {
         }),
       });
       form.reset();
-      window.location.href = "../Login.html";
+      window.location.href = "../pages/Login.html";
     } catch (error) {
       console.log(error);
     }
