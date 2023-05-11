@@ -1,28 +1,56 @@
-const content = document.getElementById ("content");
-const description =
-  "Jakarta, Dedolarisasi atau fenomena pengurangan penggunaan mata uang dolar AS dalam transaksi keuangan dan perdagangan tengah terjadi di dunia. Bahkan, banyak negara secara terang-terangan mengungkapkan tak akan lagi menggunakan mata uang Negeri Paman Sam tersebut dan akan beralih menggunakan mata uang China, yuan. Dedolarisasi pertama kali dimulai oleh China dan Brasil. Negara ini menjalin kerja sama dan sepakat untuk tidak lagi menggunakan dolar AS dalam transaksi perdagangan dan investasi keduanya. Lalu diikuti oleh negara lain seperti Rusia yang memang sedang ada konflik dengan AS. Tak terkecuali Indonesia yang memang saat ini tengah berupaya meninggalkan mata uang AS. Di Indonesia, langkah dedolarisasi dimulai dengan kerja sama yang ditempuh oleh Bank Indonesia dengan berbagai negara melalui Local Currency Settlement (LCS) atau penyelesaian transaksi dengan mata uang lokal.";
-content.innerHTML = description
+const content = document.getElementById("content");
+const title = document.getElementById("title");
+const image = document.getElementById("image");
+const date = document.getElementById("date");
 
-const btnlogin = document.getElementById("btnlogin")
+const queryParams = new URLSearchParams(window.location.search);
+const id = queryParams.get("id") || 1;
+const btnlogin = document.getElementById("btnlogin");
 
 const logout = () => {
   localStorage.removeItem("user");
   window.location.reload();
-}
+};
 
 const isLogin = () => {
-  if (localStorage.getItem("user") != null){
+  if (localStorage.getItem("user") != null) {
     btnlogin.innerHTML = `<a id="btnlogout">
     <button class="btn btn-primary text-white" type="submit" >Logout</button>
 </a>`;
     const btnlogout = document.getElementById("btnlogout");
     btnlogout.addEventListener("click", logout);
   }
-}
+};
 
-//const colorGreen = () => {
-  // document.getElementById("color").style.color = "green";
-// }
+isLogin();
 
-isLogin()
+const getArticleDetail = async () => {
+  try {
+    const res = await fetch(
+      `https://6450c07fa32219691150eb05.mockapi.io/ayo-api/articles?id=${id}`,
+      {
+        method: "GET",
+        headers: { "content-type": "application/json" },
+      }
+    );
+    const data = await res.json();
+    console.log(data);
+    if (data.length > 0) {
+      title.textContent = data[0].title;
+      date.textContent = data[0].publishedAt;
+      image.src = data[0].image;
+      content.innerHTML = data[0].content
+        .split(". ")
+        .map(
+          (el) => `
+    ${el}.<br>
+    `
+        )
+        .join("");
+    }
+  } catch (error) {
+    console.log(error);
+  }
+};
 
+getArticleDetail();
