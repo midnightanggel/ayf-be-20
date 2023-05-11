@@ -13,18 +13,29 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
     <title>AYO</title>
-    <link href="assets/Pic/AYO logo.jfif" rel="icon" />
-    <link href="assets/Pic/AYO logo.jfif" rel="apple-touch-icon" />
+
+    <!-- Favicons -->
+    <link href="../assets/Pic/AYO logo.jfif" rel="icon" />
+    <link href="../assets/Pic/AYO logo.jfif" rel="apple-touch-icon" />
   </head>
   <body>
     <!-- Start Navbar -->
     <nav class="navbar navbar-expand-lg" style="background-color: #0a4d68">
       <div class="container">
-        <a class="navbar-brand text-white" href="./index.html">
+        <a class="navbar-brand text-white" href="../index.html">
           <img
-            src="assets/Pic/AYO logo.jfif"
+            src="../assets/Pic/AYO logo.jfif"
             alt="Logo"
             width="40"
             height="40"
@@ -49,24 +60,20 @@
               <a
                 class="nav-link active text-white"
                 aria-current="page"
-                href="./index.html"
+                href="index.html"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="./pages/article.html"
-                >Article</a
-              >
+              <a class="nav-link text-white" href="./article.html">Article</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="./pages/AboutUs.html"
-                >About Us</a
-              >
+              <a class="nav-link text-white" href="./aboutus">About Us</a>
             </li>
             <div id="btnlogin">
-              <a href="./pages/Login.html">
+              <a href="./Login.html">
                 <button class="btn btn-primary text-white" type="submit">
-                  Login
+                  SignIn/SignUp
                 </button>
               </a>
             </div>
@@ -76,42 +83,76 @@
     </nav>
     <!-- End Navbar -->
 
-    <!-- Start Content -->
-    <section
-      class="p-5 text-center text-sm-start"
-      id="home"
-      style="
-        background-image: linear-gradient(160deg, #00ffca, #8a2be2, #00ffca);
-      "
+    <!-- ======= Breadcrumbs ======= -->
+    <div
+      class="breadcrumbs"
+      style="background-image: url('assets/Pic/about-header.jpg')"
     >
-      <div class="container py-5">
-        <div class="d-sm-flex align-items-center justify-content-between py-5">
-          <div>
-            <h1 style="color: #ffffff">
-              <strong>AYO (ASEAN YOUTH FORUM)</strong>
-            </h1>
-            <p class="my-4" style="color: rgb(255, 255, 255)">
-              Aplikasi ini merupakan wadah bagi para pemuda khususnya di ASEAN
-              untuk menerima, menyampaikan, serta mencari segala jenis
-              informasi, gagasan, ataupun kritik yang dapat memberikan rasa aman
-              dan nyaman untuk para pemuda di ASEAN.
-            </p>
-            <button class="btn btn-primary btn-lg text-white">
-              Let's Start
-            </button>
+      <div
+        class="container position-relative d-flex flex-column align-items-center"
+      >
+        <h2>About</h2>
+        <ol>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./AboutUs.html">AboutUs</a></li>
+          <li>Company History</li>
+        </ol>
+      </div>
+    </div>
+    <!-- End Breadcrumbs -->
+
+    <!-- Start Section -->
+    <section class="p-5" id="aboutus">
+      <div class="container">
+        <div class="row">
+          <div class="d-flex align-items-center col-lg-4 col-md-12 col-12">
+            <div class="about-img">
+              <img alt="" class="img-fluid" src="../assets/Pic/ayf_img.jpg" />
+            </div>
           </div>
-          <a href="#">
-            <img
-              src="assets/Pic/Logo.png"
-              alt="Logo"
-              class="img-fluid"
-              width="1000"
-            />
-          </a>
+          <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+            <div class="about-text">
+              <h2>
+                We are ASEAN YOUTH FORUM<br />
+                Company History
+              </h2>
+              <p>
+                ASEAN Youth Forum adalah sebuah forum yang diadakan oleh ASEAN
+                (Association of Southeast Asian Nations) untuk membawa
+                bersama-sama pemuda dari seluruh negara anggota ASEAN untuk
+                berdiskusi dan bertukar informasi tentang isu-isu penting yang
+                memengaruhi kawasan ASEAN.Forum ini bertujuan untuk meningkatkan
+                partisipasi pemuda dalam proses integrasi regional ASEAN dan
+                untuk mengembangkan pemahaman yang lebih baik tentang kebutuhan
+                dan harapan pemuda ASEAN. Di forum ini, pemuda ASEAN dapat
+                memperkenalkan diri, berinteraksi, berkolaborasi, dan membuat
+                jaringan dengan pemuda lain dari seluruh kawasan ASEAN.
+              </p>
+              <p class="fw-medium">Sejarah</p>
+              <p>
+                Sejarah ASEAN Youth Forum dimulai pada tahun 1975 ketika ASEAN
+                didirikan. Forum ini bertujuan untuk memfasilitasi dialog dan
+                pertukaran antara pemuda-pemudi ASEAN dalam upaya untuk
+                meningkatkan pemahaman dan kerjasama regional di antara
+                negara-negara anggota ASEAN. Setiap tahun, pemuda-pemudi dari
+                seluruh ASEAN berkumpul untuk membahas isu-isu penting yang
+                dihadapi oleh masyarakat ASEAN, seperti perdamaian dan keamanan,
+                pemberdayaan ekonomi, lingkungan, dan kesehatan. Forum ini juga
+                menjadi tempat untuk membangun jaringan dan mempererat hubungan
+                antara pemuda-pemudi ASEAN. Selain itu, ASEAN Youth Forum juga
+                bekerja sama dengan ASEAN Summit dan ASEAN Ministerial Meetings
+                untuk menyampaikan pandangan dan aspirasi pemuda-pemudi ASEAN
+                pada tingkat kebijakan. Forum ini menjadi wadah yang penting
+                bagi pemuda-pemudi ASEAN untuk memberikan suara mereka dalam
+                pembuatan kebijakan ASEAN dan meningkatkan peran mereka dalam
+                memajukan masyarakat ASEAN.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <!-- End Content -->
+    <!-- End Section -->
 
     <!-- Start Section Footer -->
     <footer
@@ -155,13 +196,13 @@
             </h5>
             <ul class="list-styled">
               <li class="mb-1 text-white">
-                <a class="text-white" href="./index.html">Home</a>
+                <a class="text-white" href="../index.html">Home</a>
               </li>
               <li class="mb-1 text-white">
-                <a class="text-white" href="./pages/AboutUs.html">About US</a>
+                <a class="text-white" href="./AboutUs.html">About US</a>
               </li>
               <li class="mb-1 text-white">
-                <a class="text-white" href="./pages/article.html">Article</a>
+                <a class="text-white" href="./article.html">Article</a>
               </li>
             </ul>
           </div>
@@ -187,5 +228,8 @@
     </footer>
     <!-- End Bottom Footer -->
   </body>
-  <script src="./modules/home.js" type="module"></script>
+  <script
+    src="../modules/AboutUs_Detail_CompanyHistory.js"
+    type="module"
+  ></script>
 </html>
